@@ -1,0 +1,50 @@
+name: ludo_king_clone
+description: A multiplayer Ludo board game app with Flutter.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.0.0
+
+  # Networking & Real-time
+  socket_io_client: ^2.0.0
+  http: ^1.0.0
+
+  # Authentication
+  shared_preferences: ^2.2.0
+  jwt_decoder: ^2.0.1
+
+  # UI
+  cupertino_icons: ^1.0.2
+  google_fonts: ^5.1.0
+  flutter_animate: ^4.1.0
+
+  # Utilities
+  uuid: ^3.0.7
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/sounds/
+  fonts:
+    - family: CustomFont
+      fonts:
+        - asset: assets/fonts/CustomFont-Regular.ttf
+        - asset: assets/fonts/CustomFont-Bold.ttf
+          weight: 700
